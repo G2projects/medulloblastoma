@@ -42,11 +42,11 @@ Characterization of backsplicing variants in Group 3 and Sonic Hedgehog (SHH) me
 The PBS script templates will require additional files, either provided with this repository or within the Bioinformatics Facility cluster.
 They include:
 
-- **credential.json** &nbsp; Credentials needed for downloading EGA datasets. Available at: /data/hpc-share/Fernando/medulloblastoma/downloads
-- **ega.yml** &nbsp; Configuration file for the EGA conda environment (needed for EGA data downloading).
-- **rnaseq.yml** &nbsp; Configuration file for the RNA-seq conda environment. This is needed for STAR read mapper and CIRCexplorer2 execution.
-- **hg19_ref_all.txt** &nbsp; Transcripts reference file. This file contains transcripts from Ensembl, UCSC KnownGenes, and RefSeq databases.
-- **GRCh37.p13.genome.fa** &nbsp; Reference genome (hg19) in fasta format. Available at: /data/hpc-share/genomeRef/GENCODEv19
+- **credential.json** &nbsp;&nbsp; Credentials needed for downloading EGA datasets. Available at: /data/hpc-share/Fernando/medulloblastoma/downloads
+- **ega.yml** &nbsp;&nbsp; Configuration file for the EGA conda environment (needed for EGA data downloading).
+- **rnaseq.yml** &nbsp;&nbsp; Configuration file for the RNA-seq conda environment. This is needed for STAR read mapper and CIRCexplorer2 execution.
+- **hg19_ref_all.txt** &nbsp;&nbsp; Transcripts reference file. This file contains transcripts from Ensembl, UCSC KnownGenes, and RefSeq databases.
+- **GRCh37.p13.genome.fa** &nbsp;&nbsp; Reference genome (hg19) in fasta format. Available at: /data/hpc-share/genomeRef/GENCODEv19
 
 ## PBS scheduler
 
