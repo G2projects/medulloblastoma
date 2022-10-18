@@ -142,12 +142,12 @@ source ~/.bashrc
 conda activate /data/hpc-data/shared/condaEnv/rnaseq
 cd /data/hpc-share/Fernando/medulloblastoma/EGAF0000xxxxxxx_xx
 
-CIRCexplorer2 parse -t STAR EGAF0000xxxxxxxChimeric.out.junction \
--b EGAF0000xxxxxxx_backspliced_junctions.bed > EGAF0000xxxxxxxCIRCexplorer2_parse.log
+# This will create a back_spliced_junction.bed file
+CIRCexplorer2 parse -t STAR EGAF0000xxxxxxxChimeric.out.junction > EGAF0000xxxxxxxCIRCexplorer2_parse.log
 
 CIRCexplorer2 annotate \
 -r /data/hpc-share/Fernando/medulloblastoma/CE2_refs/hg19_ref_all.txt \
 -g /data/hpc-share/genomeRef/GENCODEv19/GRCh37.p13.genome.fa \
--b EGAF0000xxxxxxx_back_spliced_junctions.bed \
+-b /data/hpc-share/Fernando/medulloblastoma/EGAF0000xxxxxxx_xx/back_spliced_junction.bed \
 -o EGAF0000xxxxxxx_circularRNA.txt
 ```
