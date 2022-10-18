@@ -56,7 +56,7 @@ Filename format: **EGAF0000xxxxxxx_download.sh**
 
 Requirements: [conda](https://github.com/conda/conda), [PyEGA3](https://pypi.org/project/pyega3), [EGA](https://ega-archive.org) credentials
 
-Supplementary files: **ega** conda environment
+Supplementary resources: **ega** conda environment
 
 ```
 #! /bin/bash
@@ -85,7 +85,7 @@ Filename format: **align_star.sh**
 
 Requirements: [conda](https://github.com/conda/conda), [STAR](https://github.com/alexdobin/STAR)
 
-Supplementary files: **rnaseq** conda environment, **star_align_chimeric.py** script
+Supplementary resources: **rnaseq** conda environment, **star_align_chimeric.py** script
 
 ```
 #! /bin/bash 
@@ -133,7 +133,7 @@ control,1,XXXXXXXXX_7_AGGTTT_1.fastq.gz,XXXXXXXXX_7_AGGTTT_2.fastq.gz,forward
 
 Requirements: [conda](https://github.com/conda/conda), [CIRCexplorer2](https://circexplorer2.readthedocs.io/en/latest)
 
-Supplementary files: **rnaseq** conda environment, transcripts file (**hg19_ref_all.txt**)
+Supplementary resources: **rnaseq** conda environment, transcripts file (**hg19_ref_all.txt**)
 
 ```
 #! /bin/bash 
