@@ -74,7 +74,7 @@ Filename format: **align_star.sh**
 
 Requirements: [conda](https://github.com/conda/conda), [STAR](https://github.com/alexdobin/STAR)
 
-Supplementary files: **rnaseq** conda environment
+Supplementary files: **rnaseq** conda environment, **star_align_chimeric.py** script
 
 ```
 #! /bin/bash 
