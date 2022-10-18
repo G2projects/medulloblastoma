@@ -118,4 +118,36 @@ control,1,XXXXXXXXX_7_AGGTTT_1.fastq.gz,XXXXXXXXX_7_AGGTTT_2.fastq.gz,forward
 - Progress bar log (***Log.progress.out**)
 - Execution log (***Log.out**)
 
+### CircExplorer2
 
+Requirements: [conda](https://github.com/conda/conda), [STAR read mapper](https://github.com/alexdobin/STAR)
+
+Supplementary files: **rnaseq** conda environment, **star_align_chimeric.py** script
+
+```
+#! /bin/bash 
+
+#PBS -o EGAF0000xxxxxxx_CE2.stdout 
+#PBS -e EGAF0000xxxxxxx_CE2.stderr 
+#PBS -l select=2:ncpus=16:mem=30g
+#PBS -l place=scatter
+#PBS -N EGAF0000xxxxxxx_CE2
+#PBS -m ea
+#PBS -q workq
+#PBS -M fernando.palluzzi@policlinicogemelli.it
+
+module load anaconda/3
+conda init bash 
+source ~/.bashrc 
+conda activate /data/hpc-data/shared/condaEnv/rnaseq
+cd /data/hpc-share/Fernando/medulloblastoma/EGAF0000xxxxxxx_xx
+
+CIRCexplorer2 parse -t STAR EGAF0000xxxxxxxChimeric.out.junction \
+-b EGAF0000xxxxxxx_backspliced_junctions.bed > EGAF0000xxxxxxxCIRCexplorer2_parse.log
+
+CIRCexplorer2 annotate \
+-r /data/hpc-share/Fernando/medulloblastoma/CE2_refs/hg19_ref_all.txt \
+-g /data/hpc-share/genomeRef/GENCODEv19/GRCh37.p13.genome.fa \
+-b EGAF0000xxxxxxx_back_spliced_junctions.bed \
+-o EGAF0000xxxxxxx_circularRNA.txt
+```
