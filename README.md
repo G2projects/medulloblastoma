@@ -118,9 +118,9 @@ control,1,XXXXXXXXX_7_AGGTTT_1.fastq.gz,XXXXXXXXX_7_AGGTTT_2.fastq.gz,forward
 - Progress bar log (***Log.progress.out**)
 - Execution log (***Log.out**)
 
-### CircExplorer2
+### CIRCexplorer2
 
-Requirements: [conda](https://github.com/conda/conda), [STAR read mapper](https://github.com/alexdobin/STAR)
+Requirements: [conda](https://github.com/conda/conda), [CIRCexplorer2](https://circexplorer2.readthedocs.io/en/latest)
 
 Supplementary files: **rnaseq** conda environment, **star_align_chimeric.py** script
 
