@@ -74,7 +74,7 @@ source ~/.bashrc
 conda activate /data/hpc-data/shared/condaEnv/ega
 cd /data/hpc-share/Fernando/medulloblastoma/download_shh
 
-pyega3 -cf /data/hpc-share/Fernando/medulloblastoma/download_shh/credential.json fetch EGAF0000xxxxxxx
+pyega3 -cf credential.json fetch EGAF0000xxxxxxx
 ```
 
 ### Alignment script
