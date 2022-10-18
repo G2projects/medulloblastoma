@@ -96,13 +96,13 @@ control,1,XXXXXXXXX_7_AGGTTT_1.fastq.gz,XXXXXXXXX_7_AGGTTT_2.fastq.gz,forward
 
 #### Output files
 
-- Alignment file (*.bam)
+- Alignment file (***.bam**)
 - Temporary alignment directory (can be removed after the alignment)
-- Gene counts (*ReadsPerGene.out.tab)
-- Splicing junctions table (*SJ.out.tab)
-- Chimeric junctions table (*Chimeric.out.junction)
-- Execution summary (*Log.final.out)
-- Progress bar log (*Log.progress.out)
-- Execution log (*Log.out)
+- Gene counts (***ReadsPerGene.out.tab**)
+- Splicing junctions table (***SJ.out.tab**)
+- Chimeric junctions table (***Chimeric.out.junction**)
+- Execution summary (***Log.final.out**)
+- Progress bar log (***Log.progress.out**)
+- Execution log (***Log.out**)
 
 
