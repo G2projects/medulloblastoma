@@ -122,7 +122,7 @@ control,1,XXXXXXXXX_7_AGGTTT_1.fastq.gz,XXXXXXXXX_7_AGGTTT_2.fastq.gz,forward
 
 Requirements: [conda](https://github.com/conda/conda), [CIRCexplorer2](https://circexplorer2.readthedocs.io/en/latest)
 
-Supplementary files: **rnaseq** conda environment, **star_align_chimeric.py** script
+Supplementary files: **rnaseq** conda environment, transcripts file (**hg19_ref_all.txt**)
 
 ```
 #! /bin/bash 
