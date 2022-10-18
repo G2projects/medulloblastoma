@@ -52,8 +52,6 @@ They include:
 
 ### EGA download script
 
-Filename format: **EGAF0000xxxxxxx_download.sh**
-
 Requirements: [conda](https://github.com/conda/conda), [PyEGA3](https://pypi.org/project/pyega3), [EGA](https://ega-archive.org) credentials
 
 Supplementary resources: **ega** conda environment
@@ -80,8 +78,6 @@ pyega3 -cf /data/hpc-share/Fernando/medulloblastoma/download_shh/credential.json
 ```
 
 ### Alignment script
-
-Filename format: **align_star.sh**
 
 Requirements: [conda](https://github.com/conda/conda), [STAR](https://github.com/alexdobin/STAR)
 
