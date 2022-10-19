@@ -35,6 +35,8 @@ Characterization of backsplicing variants in Group 3 and Sonic Hedgehog (SHH) me
 |  > FASTQ
 |  > Alignments
 |  > Counts
+|
+> deprecated
 ```
 
 ## Supplementary files
@@ -182,7 +184,7 @@ Supplementary resources: indexed hg19 genome (**GRCh37.p13.genome.fa**), transcr
 
 module load ciri/2.1.1
 
-cd /data/hpc-share/Fernando/medulloblastoma/EGAF0000xxxxxxx_xx
+cd /data/hpc-share/Fernando/medulloblastoma
 
 # The reference genome (-r) must be indexed!
 
