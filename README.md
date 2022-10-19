@@ -125,7 +125,9 @@ control,1,XXXXXXXXX_7_AGGTTT_1.fastq.gz,XXXXXXXXX_7_AGGTTT_2.fastq.gz,forward
 - Progress bar log (***Log.progress.out**)
 - Execution log (***Log.out**)
 
-### CIRCexplorer2
+### Backsplicing events calling
+
+#### CIRCexplorer2
 
 Requirements: [conda](https://github.com/conda/conda), [CIRCexplorer2](https://circexplorer2.readthedocs.io/en/latest)
 
@@ -159,7 +161,7 @@ CIRCexplorer2 annotate \
 -o EGAF0000xxxxxxx_circularRNA.txt
 ```
 
-### CIRI (full pipeline)
+#### CIRI
 
 Requirements: [CIRI](https://ciri-cookbook.readthedocs.io/en/latest/CIRI2.html)
 
