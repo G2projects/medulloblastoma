@@ -158,3 +158,40 @@ CIRCexplorer2 annotate \
 -b /data/hpc-share/Fernando/medulloblastoma/EGAF0000xxxxxxx_xx/back_spliced_junction.bed \
 -o EGAF0000xxxxxxx_circularRNA.txt
 ```
+
+### CIRI (full pipeline)
+
+Requirements: [conda](https://github.com/conda/conda), [CIRI](https://ciri-cookbook.readthedocs.io/en/latest/CIRI2.html)
+
+Supplementary resources: indexed hg19 genome (**GRCh37.p13.genome.fa**), transcripts file (**gencode.v19.annotation.gtf**)
+
+```
+#! /bin/bash
+
+#PBS -o /data/hpc-share/medulloblastoma/cirifullXXXX.stdout
+#PBS -e /data/hpc-share/medulloblastoma/cirifullXXXX.stderr
+#PBS -l select=2:ncpus=16:mem=30g
+#PBS -l place=scatter
+#PBS -N ciriXXXX
+#PBS -m ea
+#PBS -q workq
+#PBS -M fernando.palluzzi@policlinicogemelli.it
+
+module load ciri/2.1.1
+module load anaconda/3
+conda init bash
+source ~/.bashrc
+conda activate /data/hpc-data/shared/condaEnv/rnaseq
+cd /data/hpc-share/Fernando/medulloblastoma/EGAF0000xxxxxxx_xx
+
+# The reference genome (-r) must be indexed!
+
+java -jar /apps/ciri/2.1.1/bin/CIRI_Full_v2.1.1.jar RO1 \
+-1 fastq/EGAF0000xxxxxxx/XXXXXXXXX_5_CATTTT_1.fastq.gz \
+-2 fastq/EGAF0000xxxxxxx/XXXXXXXXX_5_CATTTT_2.fastq.gz \
+-r /data/hpc-share/genomeRef/GENCODEv19/GRCh37.p13.genome.fa \
+-a /data/hpc-share/genomeRef/GENCODEv19/gencode.v19.annotation.gtf \
+-t 16 \
+-d /data/hpc-share/Fernando/medulloblastoma/EGAF0000xxxxxxx_xx \
+-o EGAF0000xxxxxxx_xx
+```
