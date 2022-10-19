@@ -200,6 +200,6 @@ java -jar /apps/ciri/2.1.1/bin/CIRI_Full_v2.1.1.jar \
 
 ### Splicing junction quantification
 
-# Requirements: [sj2psi converter](https://github.com/olgabot/sj2psi)
+Requirements: [sj2psi converter](https://github.com/olgabot/sj2psi)
 
-# Supplementary resources: **starsj2psi.py**, **psiparse.py**, **extractIntronicSJs.py**
+Supplementary resources: **starsj2psi.py**, **psiparse.py**, **extractIntronicSJs.py**
