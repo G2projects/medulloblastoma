@@ -47,6 +47,7 @@ They include:
 - **rnaseq.yml** &nbsp;&nbsp; Configuration file for the RNA-seq conda environment. This is needed for STAR read mapper and CIRCexplorer2 execution.
 - **hg19_ref_all.txt** &nbsp;&nbsp; Transcripts reference file. This file contains transcripts from Ensembl, UCSC KnownGenes, and RefSeq databases.
 - **GRCh37.p13.genome.fa** &nbsp;&nbsp; Reference genome (hg19) in fasta format. Available at: /data/hpc-share/genomeRef/GENCODEv19
+- **gencode.v19.annotation.gtf** &nbsp;&nbsp; GENCODE hg19 transcripts. Available at: /data/hpc-share/genomeRef/GENCODEv19
 
 ## PBS scheduler
 
