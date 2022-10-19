@@ -161,7 +161,7 @@ CIRCexplorer2 annotate \
 
 ### CIRI (full pipeline)
 
-Requirements: [conda](https://github.com/conda/conda), [CIRI](https://ciri-cookbook.readthedocs.io/en/latest/CIRI2.html)
+Requirements: [CIRI](https://ciri-cookbook.readthedocs.io/en/latest/CIRI2.html)
 
 Supplementary resources: indexed hg19 genome (**GRCh37.p13.genome.fa**), transcripts file (**gencode.v19.annotation.gtf**)
 
@@ -178,15 +178,12 @@ Supplementary resources: indexed hg19 genome (**GRCh37.p13.genome.fa**), transcr
 #PBS -M fernando.palluzzi@policlinicogemelli.it
 
 module load ciri/2.1.1
-module load anaconda/3
-conda init bash
-source ~/.bashrc
-conda activate /data/hpc-data/shared/condaEnv/rnaseq
+
 cd /data/hpc-share/Fernando/medulloblastoma/EGAF0000xxxxxxx_xx
 
 # The reference genome (-r) must be indexed!
 
-java -jar /apps/ciri/2.1.1/bin/CIRI_Full_v2.1.1.jar RO1 \
+java -jar /apps/ciri/2.1.1/bin/CIRI_Full_v2.1.1.jar \
 -1 fastq/EGAF0000xxxxxxx/XXXXXXXXX_5_CATTTT_1.fastq.gz \
 -2 fastq/EGAF0000xxxxxxx/XXXXXXXXX_5_CATTTT_2.fastq.gz \
 -r /data/hpc-share/genomeRef/GENCODEv19/GRCh37.p13.genome.fa \
