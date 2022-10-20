@@ -104,7 +104,7 @@ source ~/.bashrc
 conda activate /data/hpc-data/shared/condaEnv/rnaseq
 cd /data/hpc-share/medulloblastoma/EGAF0000xxxxxxx_xx/alignment
 
-python3 python3 star_align_chimeric.py \
+python3 star_align_chimeric.py \
 /data/hpc-share/Fernando/medulloblastoma/EGAF0000xxxxxxx_xx/samplesheet.csv \
 /data/hpc-share/Fernando/medulloblastoma/EGAF0000xxxxxxx_xx/alignment
 ```
