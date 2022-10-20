@@ -51,7 +51,7 @@ They include:
 - **GRCh37.p13.genome.fa** &nbsp;&nbsp; Reference genome (hg19) in fasta format. Available at: /data/hpc-share/genomeRef/GENCODEv19
 - **gencode.v19.annotation.gtf** &nbsp;&nbsp; GENCODE hg19 transcripts. Available at: /data/hpc-share/genomeRef/GENCODEv19
 
-## PBS scheduler
+## Backsplicing events calling
 
 ### EGA download script
 
