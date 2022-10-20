@@ -244,10 +244,11 @@ optional arguments:
   -c CHROM, --chrom CHROM
                         Chromosome field. (default: 1)
   
-  -n NA, --na NA        Value to be substituted to NAs. This argument may take either numbers or strings. (default: 0)
+  -n NA, --na NA        Value to be substituted to NAs.
+                        This argument may take either numbers or strings. (default: 0)
   
   -s SEPARATOR, --separator SEPARATOR
-                        Field separator. (default: " ")
+                        Field separator. (default: "\t")
   
   -H, --noheader        Enable if the input file has no header. (default: False)
   
