@@ -4,39 +4,45 @@ Detection and characterization of backsplicing variants in Group 3 and Sonic Hed
 ## Cluster tree
 
 ```
-/data/hpc-share/Fernando/medulloblastoma
+/data
+|  |
+|  /shared/condaEnv
+|   > ega
+|   > rnaseq
 |
-> downloads              # EGA samples download directory
+/hpc-share/Fernando/medulloblastoma
+|
+> /downloads              # EGA samples download directory
 |  > credential.json
 |  > EGAF0000xxxxxxx_download.sh
 |
-> CE2_refs               # Circ Explorer 2 references
+> /CE2_refs               # Circ Explorer 2 references
 |  > hg19_ens.txt
 |  > hg19_kg.txt
-|  > hg19_ref_all.txt
 |  > hg19_ref.txt
+|  > hg19_ref_all.txt
 |
-> MB_group3         # medulloblastoma group 3 (moved to external SSD/HDD)
+> /MB_group3         # medulloblastoma group 3 (moved to external SSD/HDD)
 |  > FASTQ
 |  > Alignments
 |  > Counts
 |
-> MB_SHH            # medulloblastoma sonic hedgehog (moved to external SSD/HDD)
+> /MB_SHH            # medulloblastoma sonic hedgehog (moved to external SSD/HDD)
 |  > FASTQ
 |  > Alignments
 |  > Counts
 |
-> HFB               # healthy fetal brain (moved to external SSD/HDD)
+> /HFB               # healthy fetal brain (moved to external SSD/HDD)
 |  > FASTQ
 |  > Alignments
 |  > Counts
 |
-> HAB               # healthy adult brain (moved to external SSD/HDD)
+> /HAB               # healthy adult brain (moved to external SSD/HDD)
 |  > FASTQ
 |  > Alignments
 |  > Counts
 |
-> deprecated
+> /deprecated
 ```
 
 ## Supplementary files
