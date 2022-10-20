@@ -1,12 +1,3 @@
-
-############################################
-# NAME: star_align_chimeric.py
-# AUTHOR: Luciano Giaco', Fernando Palluzzi
-# Date: 16/03/2021
-version = "0.1"
-# ==========================================
-
-
 import csv
 import os
 import sys
@@ -33,14 +24,14 @@ def open_read_csv(csvfile, WD):
                 os.mkdir(currentDir)
                 os.chdir(currentDir)
                 str_to_run = ('STAR \
-		              --readFilesIn ' + fastq1 + ' ' + fastq2 + ' \
-			      --runThreadN 16 \
-			      --genomeDir ' + STAR_HG19 + ' \
-			      --readFilesCommand zcat \
-			      --outSAMtype BAM SortedByCoordinate \
-			      --quantMode GeneCounts \
-			      --chimSegmentMin 10 \
-			      --outFileNamePrefix ' + prefix)
+--readFilesIn '+fastq1+' '+fastq2+' \
+--runThreadN 16 \
+--genomeDir '+STAR_HG19+' \
+--readFilesCommand zcat \
+--outSAMtype BAM SortedByCoordinate \
+--quantMode GeneCounts \
+--chimSegmentMin 10 \
+--outFileNamePrefix '+prefix)
 
                 arr_to_run = str_to_run.split()
             
@@ -59,4 +50,3 @@ if __name__ == '__main__':
     csvfile = sys.argv[1]
     WD = sys.argv[2]
     main(WD, csvfile)
-
