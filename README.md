@@ -198,13 +198,13 @@ java -jar /apps/ciri/2.1.1/bin/CIRI_Full_v2.1.1.jar \
 -o EGAF0000xxxxxxx_xx
 ```
 
-### Splicing junction quantification
+## Splicing junction quantification
 
 Requirements: [sj2psi converter](https://github.com/olgabot/sj2psi)
 
 Supplementary resources: **starsj2psi.py**, **psiparse.py**, **extractIntronicSJs.py**
 
-#### Convert splicing junctions to percent spliced-in (PSI)
+### Convert splicing junctions to percent spliced-in (PSI)
 
 This utility qantifies splicing junction usage and outputs other intron and junction information.
 
@@ -227,7 +227,7 @@ optional arguments:
   -q, --quiet           Suppress verbosity. (default: False)
 ```
 
-#### PSI parsing
+### PSI parsing
 
 Parse the output of starsj2psi.py, making it human-friendly.
 
@@ -261,7 +261,7 @@ optional arguments:
   -q, --quiet           Suppress verbosity. (default: False)
 ```
 
-#### Intronic junction extraction
+### Intronic junction extraction
 
 Extract intronic junctions fom an intron BED file.
 
