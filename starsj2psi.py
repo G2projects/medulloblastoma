@@ -16,7 +16,7 @@ except ImportError:
 import argparse
 
 
-parser = argparse.ArgumentParser()
+parser = argparse.ArgumentParser(formatter_class = argparse.ArgumentDefaultsHelpFormatter)
 
 parser.add_argument("sjout",
                     help = "STAR alignment SJ.out.tab file.",
