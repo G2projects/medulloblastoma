@@ -9,24 +9,26 @@ import argparse
 parser = argparse.ArgumentParser()
 
 parser.add_argument("introns",
-                    help = "Introns BED file. The first 6 fields" +\
+                    help = "Introns BED file. The first 6 fields " +\
                            "must be: chromosome, start, end, name, " +\
                            "score, strand.",
                     type = str)
 
 parser.add_argument("-w", "--width",
-                    help = "Width of the output region.",
+                    help = "Width of the output intronic junction region. " +\
+                           "(default: 1)",
                     type = int,
                     default = 1)
 
 parser.add_argument("-j", "--junctionSide",
-                    help = "Position of the field indicating in which" +\
-                           "side (\"L\" or \"R\") the intron is.",
+                    help = "Position of the field indicating in which " +\
+                           "side (\"L\" or \"R\") the intron is.\n" +\
+                           "Set to -1 (default) to skip.",
                     type = int,
                     default = -1)
 
 parser.add_argument("-p", "--phenotype",
-                    help = "Phenotype field.",
+                    help = "Phenotype field. Set to -1 (default) to skip.",
                     type = int,
                     default = -1)
 
