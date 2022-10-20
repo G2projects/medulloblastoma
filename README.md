@@ -204,7 +204,7 @@ Requirements: [sj2psi converter](https://github.com/olgabot/sj2psi)
 
 Supplementary resources: **starsj2psi.py**, **psiparse.py**, **extractIntronicSJs.py**
 
-#### Convert splicing junctions to PSI file
+#### Convert splicing junctions to percent spliced-in (PSI)
 
 ```
 usage: starsj2psi.py [-h] [-u UNIQUE] [-m MULTIMAP] [-q] sjout
