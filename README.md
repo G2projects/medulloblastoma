@@ -155,7 +155,7 @@ conda activate /data/hpc-data/shared/condaEnv/rnaseq
 cd /data/hpc-share/Fernando/medulloblastoma/EGAF0000xxxxxxx_xx
 
 # This will create a back_spliced_junction.bed file
-CIRCexplorer2 parse -t STAR EGAF0000xxxxxxxChimeric.out.junction > EGAF0000xxxxxxxCIRCexplorer2_parse.log
+CIRCexplorer2 parse -t STAR EGAF0000xxxxxxxChimeric.out.junction > EGAF0000xxxxxxxCE2_parse.log
 
 CIRCexplorer2 annotate \
 -r /data/hpc-share/Fernando/medulloblastoma/CE2_refs/hg19_ref_all.txt \
