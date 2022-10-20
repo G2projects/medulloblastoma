@@ -270,7 +270,8 @@ usage: extractIntronicSJs.py [-h] [-w WIDTH] [-j JUNCTIONSIDE] [-p PHENOTYPE] [-
 
 positional arguments:
   
-  introns               Introns BED file. The first 6 fields must be: chromosome, start, end, name, score, strand.
+  introns               Introns BED file.
+                        The first 6 fields must be: chromosome, start, end, name, score, strand.
 
 optional arguments:
   
