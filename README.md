@@ -256,3 +256,31 @@ optional arguments:
   
   -q, --quiet           Suppress verbosity. (default: False)
 ```
+
+#### Intronic junction extraction
+
+```
+usage: extractIntronicSJs.py [-h] [-w WIDTH] [-j JUNCTIONSIDE] [-p PHENOTYPE] [-H] [-q] introns
+
+positional arguments:
+  
+  introns               Introns BED file. The first 6 fields must be: chromosome, start, end, name, score, strand.
+
+optional arguments:
+  
+  -h, --help            show this help message and exit
+  
+  -w WIDTH, --width WIDTH
+                        Width of the output intronic junction region. (default: 1)
+  
+  -j JUNCTIONSIDE, --junctionSide JUNCTIONSIDE
+                        Position of the field indicating in which side ("L" or "R") the intron is.
+                        Set to -1 (default) to skip.
+  
+  -p PHENOTYPE, --phenotype PHENOTYPE
+                        Phenotype field. Set to -1 (default) to skip.
+  
+  -H, --noheader        Enable if the input file has no header.
+  
+  -q, --quiet           Suppress verbosity.
+```
