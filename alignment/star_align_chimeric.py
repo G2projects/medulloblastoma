@@ -39,7 +39,6 @@ def open_read_csv(csvfile, WD):
                 subprocess.run(arr_to_run)
                 # os.system(str_to_run)
 
-
 def main(WD, csvfile):
     os.chdir(WD)
     print('[INFO] Working dir: '+ WD)
