@@ -206,7 +206,7 @@ Supplementary resources: **starsj2psi.py**, **psiparse.py**, **extractIntronicSJ
 
 ### Convert splicing junctions to percent spliced-in (PSI)
 
-This utility qantifies splicing junction usage and outputs other intron and junction information.
+This utility quantifies splicing junction usage and outputs other intron and junction information.
 
 ```
 usage: starsj2psi.py [-h] [-u UNIQUE] [-m MULTIMAP] [-q] sjout
