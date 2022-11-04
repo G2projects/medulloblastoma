@@ -6,7 +6,7 @@ Detection and characterization of backsplicing variants in Group 3 and Sonic Hed
 ```
 /data
 |  |
-|  /shared/condaEnv       # conda environments
+|  /hpc-data/shared/condaEnv       # conda environments
 |   > ega
 |   > rnaseq
 |
